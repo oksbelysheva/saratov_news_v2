@@ -56,14 +56,20 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    //размер блока скролла новостей
+    var heightScrollNews = document.getElementById("page-main__news").offsetHeight;
+    var scroll = document.getElementById("page-main__scroll-news");
 
-var h_mrg = 0; // отступ когда шапка уже не видна  
-var h_hght = document.getElementById("page-header__top").offsetHeight;
-var advertisingTop = document.querySelector(".page-header-advertising img");
 
-$(function() {
+
+    var h_mrg = 0; // отступ когда шапка уже не видна  
+    var h_hght = document.getElementById("page-header__top").offsetHeight;
+    var advertisingTop = document.querySelector(".page-header-advertising img");
     var elem = $('.page-header__bottom');
     var top = $(this).scrollTop();
+
+    scroll.style.height = heightScrollNews + "px";
 
     if (top == 0) {
         advertisingTop.style.height = h_hght + "px";
@@ -81,6 +87,10 @@ $(function() {
         } else {
             elem.css('top', h_mrg);
         }
+
+        //изменение размера scroll`а
+        heightScrollNews = document.getElementById("page-main__news").offsetHeight;
+        scroll.style.height = (heightScrollNews - 20) + "px";
     });
 });
 
