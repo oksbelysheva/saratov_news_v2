@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SMI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Описание страницы для SEO и соцсетей">
+    <meta name="keywords" content="ключевые, слова, через, запятую">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./vendors/css/datepicker.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container-top container" id="header__top">
+            <a class="header__logo" href="#"></a>
+            <div class="header__info__block">
+                <div class="header__info__row">
+                    <div>
+                        <p id="date" class="header__date header__text__date"></p>
+                    </div>
+                    <div>
+                        <span class="header__weather"><span id="temp"></span> &#8451;</span>
+                    </div>
+                    <div class="header__valute__block">
+                        <div>
+                            <a class="valute__icon__eur valute__icon" href="#"></a>
+                            <span id="eur"></span>
+                        </div>
+                        <span class="header__weather-eur"></span>
+                    </div>
+                </div>
+                <div class="header__info__row">
+                    <div>
+                        <p id="time" class="header__text__date"></p>
+                    </div>
+                    <div>
+                        <p id="city" class="header__city"></p>
+                    </div>
+                    <div class="header__valute__block">
+                        <div>
+                            <a class="valute__icon__usd valute__icon" href="#"></a>
+                            <span id="usd"></span>
+                        </div>
+                        <span class="header__weather-usd"></span>
+                    </div>
+                </div>
+            </div>
+            <a class="header__advertising" href="#">
+                <img src="img/advertisingtop.png">
+            </a>
+        </div>
+        <div class="header__bottom">
+            <div class="header__container__bottom container">
+                <a class="header__logo__mobile" href="#"></a>
+                <div class="header__navigation">
+                    <ul class="header__navigation__list">
+                        <li class="header__item">
+                            <a class="header__link" href="#">Рекламодателю</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Архив</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Подписаться на новости</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__item">
+                    <a class="header__link line_button" href="#">Предложить новость</a>
+                </div>
+                <div class="header__icons">
+                    <div class="header__menu">
+                        <ul class="header__menu__list">
+                            <li class="header__menu__item">
+                                <a class="header__link" href="#">Рекламодателям</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a class="header__link" href="#">Архив</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a class="header__link" href="#">Предложить новость</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a class="header__link" href="#">Подписаться на рассылку</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a class="header__link" href="#">Контакты</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a class="header__link" href="#">Войти</a>
+                            </li>
+                            <div class="header__menu__line"></div>
+                            <li class="header__menu__item">
+                                <a href="" class="header__link">Происшествия</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="" class="header__link">Главные новости</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="" class="header__link">Спорт</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="" class="header__link">Экономика</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="" class="header__link">Культура</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="" class="header__link">Политика</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="" class="header__link">Общество</a>
+                            </li>
+                        </ul>
+                        <div class="header__menu__feedback-icons ">
+                            <a class="header__icons-item ins " href="# "></a>
+                            <a class="header__icons-item fb " href="# "></a>
+                            <a class="header__icons-item yt " href="# "></a>
+                            <a class="header__icons-item vk " href="# "></a>
+                            <a class="header__icons-item ok " href="# "></a>
+                        </div>
+                    </div>
+                    <div class="header__feedback__icons ">
+                        <a class="header__icons-item ins " href="# "></a>
+                        <a class="header__icons-item fb " href="# "></a>
+                        <a class="header__icons-item yt " href="# "></a>
+                        <a class="header__icons-item vk " href="# "></a>
+                        <a class="header__icons-item ok " href="# "></a>
+                    </div>
+                </div>
+                <div class="header__icons__right">
+                    <div class="burger">
+                        <span class="burger-global burger-top"></span>
+                        <span class="burger-global burger-middle"></span>
+                        <span class="burger-global burger-bottom"></span>
+                    </div>
+                    <div class="header__menu__sign-in">
+                        <a class="header__link" href="#">Войти</a>
+                    </div>
+                    <a class="header__icons-search" href="#"></a>
+                    <form class="header-search-drop_down">
+                        <div class="header-search-content">
+                            <div>
+                                <input type="text" placeholder="Например, легкая атлетика" name="header__search-block__keyword">
+                                <button type="submit" id="header__search-block__submit">Поиск</button>
+                            </div>
+                            <div class="datepicker-here"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="main">
+                    <div class="main__breadcrumbs">
+                        <a class="main__breadcrumbs__item" href="./index.html">Главные новости</a>
+                        <a class="main__breadcrumbs__item current">Проишествия</a>
+                    </div>
+                    <div class="detail_news row">
+                        <div class="detail_news_content col-xl-8 col-lg-8 col-mg-8 col-sm-12 col-xs-12">
+                            <div class="detail_news_block">
+                                <div class="detail_item_block detail_news_title_info">
+                                    <div class="detail_news_timer">
+                                        <span class="detail_news_date">21 мая, 2019</span>
+                                        <span class="detail_news_time">12:01</span>
+                                    </div>
+                                    <div>
+                                        <span class="detail_news_print">Печать</span>
+                                    </div>
+                                </div>
+                                <h2 class="detail_item_block news_item_title">«Прямая линия» с Путиным. Следователи проверят, почему медикаменты не вовремя поступали в саратовские аптеки</h2>
+                                <div class="detail_item_img"></div>
+                                <p class="news_item_text">Сегодня в администрации Саратова чиновники собрали журналистов на брифинг, чтобы разъяснить ситуацию, сложившуюся из-за ЧП в Смирновском ущелье. Там магистральной улице угрожает оползень, из-за которого на неделю перекрыто
+                                    движение. </p>
+                                <p class="news_item_text"><img src="./img/detail_photo.png" align="right">Начальник управления по инженерной защите Павел Овчинников рассказал, что оползень произошел 17 апреля на пересечении улиц Новоузенской и Песчаной. Объем оползня составляет
+                                    3,5-4 тысяч кубических метров земли, причем он уже дошел до края проезжей части. «Чтобы его остановить, нужно будет очень много насыпать грунта, сделать склон пологим», — добавил Овчинников.
+                                </p>
+                                <p class="news_item_text">Сегодня в администрации Саратова чиновники собрали журналистов на брифинг, чтобы разъяснить ситуацию, сложившуюся из-за ЧП в Смирновском ущелье. Там магистральной улице угрожает оползень, из-за которого на неделю перекрыто
+                                    движение. </p>
+                                <div class="news_item_footer">
+                                    <div><span class="item_footer_source">Источник: такой-то ресурс/сайт/статья/блог</span></div>
+                                    <div class="news_item_block news_item_icons">
+                                        <div class="news_item_share">
+                                            <a class="fb " href="# "></a>
+                                            <a class="vk " href="# "></a>
+                                            <a class="ok " href="# "></a>
+                                            <a class="more " href="# "></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail_advertising_block col-xl-4 col-lg-4 col-mg-4 col-sm-4">
+                            <img class="main_advertising_img" src="img/advertising_aside.png">
+                        </div>
+                    </div>
+                    <div class="social_block row">
+                        <div class="col-xl-6 col-lg-6 col-mg-6 col-sm-12">
+                            <form class="comment_block">
+                                <span class="comment_title">Комментарии</span>
+                                <input type="text" name="comment_name" placeholder="Ваше имя">
+                                <textarea name="comment_text" rows="4"></textarea>
+                                <button type="submit" class="button">Отправить</button>
+                            </form>
+                            <div class="comment_items">
+                                <div class="comment_item">
+                                    <div class="comment_item_header">
+                                        <span class="comment_item_author">Гость 1</span>
+                                        <span class="comment_item_date">1 февраля, 22:03</span>
+                                    </div>
+                                    <p class="comment_item_text">Полностью согласен! Абсолютно верно подмечено! Полностью согласен! Абсолютно верно подмечено!</p>
+                                </div>
+                                <div class="comment_item">
+                                    <div class="comment_item_header">
+                                        <span class="comment_item_author">Гость 1</span>
+                                        <span class="comment_item_date">1 февраля, 22:03</span>
+                                    </div>
+                                    <p class="comment_item_text">Полностью согласен! Абсолютно верно подмечено! Полностью согласен! Абсолютно верно подмечено!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-mg-5 col-sm-12">
+                            <form class="subscription_block">
+                                <span class="subscription_block_title">Получайте свежие<br> новости на почту!</span>
+                                <div class="clearfix">
+                                    <input type="text" name="subscription_name" placeholder="Ваше имя">
+                                    <button type="submit">
+                                            <div class="submit_button_small"></div>
+                                        </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="advertising_full-width row">
+                        <div class="advertising_full-width_img col-xl-12 col-lg-12 col-mg-12 col-sm-12"></div>
+                    </div>
+                    <div class="also_news_block">
+                        <h2 class="also_news_title">Читайте также</h2>
+                        <div class="also_news_items">
+                            <div class="also_news_item">
+                                <div>
+                                    <a href="./detail_news2.html"><img src="img/also.png" class="also_news_img"></a>
+                                </div>
+                                <div class="also_news_description">
+                                    <a href="./detail_news2.html">
+                                        <p class="also_news_text">В облдуме рассказали, как с «копеечными затратами» создать государственную штрафстоянку и пополнять бюджет</p>
+                                    </a>
+                                    <div class="news_item_info">
+                                        <a href="#" class="item_info_comment">10</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="also_news_item">
+                                <div>
+                                    <a href="./detail_news2.html"><img src="img/also.png" class="also_news_img"></a>
+                                </div>
+                                <div class="also_news_description">
+                                    <a href="./detail_news2.html">
+                                        <p class="also_news_text">В облдуме рассказали, как с «копеечными затратами» создать государственную штрафстоянку и пополнять бюджет</p>
+                                    </a>
+                                    <div class="news_item_info">
+                                        <a href="#" class="item_info_comment">10</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="also_news_item">
+                                <div>
+                                    <a href="./detail_news2.html"><img src="img/also.png" class="also_news_img"></a>
+                                </div>
+                                <div class="also_news_description">
+                                    <a href="./detail_news2.html">
+                                        <p class="also_news_text">В облдуме рассказали, как с «копеечными затратами» создать государственную штрафстоянку и пополнять бюджет</p>
+                                    </a>
+                                    <div class="news_item_info">
+                                        <a href="#" class="item_info_comment">10</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="also_news_item">
+                                <a href="./detail_news2.html"><img src="img/also.png" class="also_news_img"></a>
+                            </div>
+                            <div class="also_news_item">
+                                <div>
+                                    <a href="./detail_news2.html"><img src="img/also.png" class="also_news_img"></a>
+                                </div>
+                                <div class="also_news_description">
+                                    <a href="./detail_news2.html">
+                                        <p class="also_news_text">В облдуме рассказали, как с «копеечными затратами» создать государственную штрафстоянку и пополнять бюджет</p>
+                                    </a>
+                                    <div class="news_item_info">
+                                        <a href="#" class="item_info_comment">10</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="also_news_item">
+                                <div>
+                                    <a href="./detail_news2.html"><img src="img/also.png" class="also_news_img"></a>
+                                </div>
+                                <div class="also_news_description">
+                                    <a href="./detail_news2.html">
+                                        <p class="also_news_text">В облдуме рассказали, как с «копеечными затратами» создать государственную штрафстоянку и пополнять бюджет</p>
+                                    </a>
+                                    <div class="news_item_info">
+                                        <a href="#" class="item_info_comment">10</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="also_news_item">
+                                <div>
+                                    <a href="./detail_news2.html"><img src="img/also.png" class="also_news_img"></a>
+                                </div>
+                                <div class="also_news_description">
+                                    <a href="./detail_news2.html">
+                                        <p class="also_news_text">В облдуме рассказали, как с «копеечными затратами» создать государственную штрафстоянку и пополнять бюджет</p>
+                                    </a>
+                                    <div class="news_item_info">
+                                        <a href="#" class="item_info_comment">10</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="also_news_item">
+                                <a href="./detail_news2.html"><img src="img/also.png" class="also_news_img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="footer ">
+        <div class="page-footer__container container ">
+            <div class="footer__top ">
+                <a class="footer__top__logo " href="/ "></a>
+                <div class="footer__top__menu ">
+                    <ul class="footer__menu__list ">
+                        <li class="footer__menu__item">
+                            <a class="footer__link" href="# ">Рекламодателям</a>
+                        </li>
+                        <li class="footer__menu__item ">
+                            <a class="footer__link" href="# ">Архив</a>
+                        </li>
+                        <li class="footer__menu__item ">
+                            <a class="footer__link" href="# ">Подписаться на рассылку</a>
+                        </li>
+                        <li class="footer__menu__item ">
+                            <a class="footer__link" href="# ">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu__list ">
+                        <li class="footer__menu__item ">
+                            <a class="footer__link" href="# ">Экономика</a>
+                        </li>
+                        <li class="footer__menu__item ">
+                            <a class="footer__link" href="# ">Происшествия</a>
+                        </li>
+                        <li class="footer__menu__item ">
+                            <a class="footer__link" href="# ">Политика</a>
+                        </li>
+                        <li class="footer__menu__item ">
+                            <a class="footer__link" href="# ">Культура</a>
+                        </li>
+                        <li class="footer__menu__item ">
+                            <a class="footer__link" href="# ">Общество</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom ">
+                <div>
+                    <span class="footer__small-text ">© 2019 Все права защищены</span>
+                    <a class="footer__link " href="#" data-toggle="modal " data-target="#politikakonfidencialnosti ">Политика конфиденциальности</a>
+                </div>
+                <a href="http://asap-ag.ru/ " target="_blank ">
+                    <div class="footer__bottom__logo ">
+                        <span class="footer__link ">Разработка сайта<br>digital - агенство ASAP</span>
+                    </div>
+                    <div class="footer__bottom__logo__image"></div>
+                </a>
+            </div>
+        </div>
+        <div class="footer__container__mobile container ">
+            <a class="footer__top__logo" href="/ "></a>
+            <span class="footer__small-text">© 2019 Все права защищены</span>
+            <a class="footer__link " href=" " data-toggle="modal " data-target="#politikakonfidencialnosti ">Политика конфиденциальности</a>
+            <div class="footer__nav ">
+                <ul>
+                    <li class="footer__menu__item ">
+                        <a class="footer__link " href="# ">Экономика</a>
+                    </li>
+                    <li class="footer__menu__item ">
+                        <a class="footer__link " href="# ">Происшествия</a>
+                    </li>
+                    <li class="footer__menu__item ">
+                        <a class="footer__link " href="# ">Политика</a>
+                    </li>
+                    <li class="footer__menu__item ">
+                        <a class="footer__link " href="# ">Культура</a>
+                    </li>
+                    <li class="footer__menu__item ">
+                        <a class="footer__link " href="# ">Общество</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="footer__menu__item ">
+                        <a class="footer__link" href="# ">Рекламодателям</a>
+                    </li>
+                    <li class="footer__menu__item ">
+                        <a class="footer__link" href="# ">Архив</a>
+                    </li>
+                    <li class="footer__menu__item ">
+                        <a class="footer__link" href="# ">Подписаться на рассылку</a>
+                    </li>
+                    <li class="footer__menu__item ">
+                        <a class="footer__link" href="# ">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom ">
+                <a href="http://asap-ag.ru/ " target="_blank ">
+                    <div class="footer__bottom__logo ">
+                        <span class="footer__link ">Разработка сайта<br>digital - агенство ASAP</span>
+                    </div>
+                    <div class="footer__bottom__logo__image"></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js " integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU "></script>
+    <script src="js/wow.min.js "></script>
+    <script src="./vendors/js/datepicker.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

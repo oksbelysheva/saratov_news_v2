@@ -52,36 +52,37 @@ $.post(request_weather, function(data) {
 $(document).ready(function() {
     $('.burger').on('click', function() {
         $(".burger").toggleClass('active');
-        $(".page-header__menu").toggleClass('page-header__menu-open');
+        $(".header__menu").toggleClass('header__menu-open');
+    });
+
+    $('.header__icons-search').on('click', function() {
+        $(".header-search-drop_down").toggleClass('active');
     });
 });
 
+//размер блока скролла новостей
+var heightScrollNews = (document.getElementById("page-main__news") != null) ? document.getElementById("page-main__news").offsetHeight : 0;
+var scroll = document.getElementById("page-main__scroll-news ");
+
 $(document).ready(function() {
-    //размер блока скролла новостей
-    var heightScrollNews = document.getElementById("page-main__news").offsetHeight;
-    var scroll = document.getElementById("page-main__scroll-news");
-
-
-
     var h_mrg = 0; // отступ когда шапка уже не видна  
-    var h_hght = document.getElementById("page-header__top").offsetHeight;
-    var advertisingTop = document.querySelector(".page-header-advertising img");
-    var elem = $('.page-header__bottom');
+    var h_hght = document.getElementById("header__top").offsetHeight;
+    var elem = $('.header__bottom');
     var top = $(this).scrollTop();
 
-    scroll.style.height = heightScrollNews + "px";
+    if (scroll != null) {
+        scroll.style.height = 1200 + "px";
+    }
 
     if (top == 0) {
-        advertisingTop.style.height = h_hght + "px";
         elem.css('top', h_hght);
     } else if (top > h_hght) {
         elem.css('top', h_mrg);
     }
 
     $(window).on("load resize scroll", function() {
-        h_hght = document.getElementById("page-header__top").offsetHeight;
+        h_hght = document.getElementById("header__top").offsetHeight;
         top = $(this).scrollTop();
-        advertisingTop.style.height = h_hght + "px";
         if (top + h_mrg < h_hght) {
             elem.css('top', (h_hght - top));
         } else {
@@ -89,8 +90,10 @@ $(document).ready(function() {
         }
 
         //изменение размера scroll`а
-        heightScrollNews = document.getElementById("page-main__news").offsetHeight;
-        scroll.style.height = (heightScrollNews - 20) + "px";
+        heightScrollNews = (document.getElementById("page-main__news") != null) ? document.getElementById("page-main__news").offsetHeight : 0;
+        if (scroll != null) {
+            scroll.style.height = (heightScrollNews - 20) + "px";
+        }
     });
 });
 
